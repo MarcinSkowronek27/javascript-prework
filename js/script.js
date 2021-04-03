@@ -10,7 +10,7 @@ function getMoveName(randomNumber) {
 }
 /*początek zmienianego kodu*/
 function displayResult(argComputerMove, argPlayerMove){
-		printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
+		printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove + '.');
 	  
 		if (argComputerMove == 'kamień' && argPlayerMove == 'papier') {
 			printMessage('Ty wygrywasz!');
@@ -32,7 +32,7 @@ function displayResult(argComputerMove, argPlayerMove){
 			printMessage('Remis!');
 		} else if (argComputerMove == 'papier' || argComputerMove == 'kamień' || argComputerMove == 'nożyce' && argPlayerMove == 'nieznany ruch') {
 			printMessage('Nie podałeś liczby 1,2 lub 3!');
-		} return 'nie działa';
+		} return '';
 }
 /*koniec zmienianego kodu*/
 function printMessage(msg) {
@@ -101,6 +101,5 @@ if (computerMove == 'kamień' && playerMove == 'papier') {
 } else if (computerMove == 'papier' || computerMove == 'kamień' || computerMove == 'nożyce' && playerMove == 'nieznany ruch') {
 	printMessage('Nie podałeś liczby 1,2 lub 3!');
 }*/
-console.log(argComputerMove);
-console.log(argPlayerMove);
+
 printMessage(displayResult(argComputerMove,argPlayerMove));
