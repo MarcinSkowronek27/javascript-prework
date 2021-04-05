@@ -37,15 +37,6 @@ function playGame(playerInput) {
 		} return '';
 	}
 	/*koniec zmienianego kodu*/
-	function printMessage(msg) {
-		let div = document.createElement('div');
-		div.innerHTML = msg;
-		document.getElementById('messages').appendChild(div);
-	}
-
-	function clearMessages() {
-		document.getElementById('messages').innerHTML = '';
-	}
 
 	let randomNumber = Math.floor(Math.random() * 3 + 1);
 
@@ -116,3 +107,4 @@ document.getElementById('play-paper').addEventListener('click', function () {
 document.getElementById('play-scissors').addEventListener('click', function () {
 	playGame(3);
 });
+/*dodać ostatni commit na gitHub*/
