@@ -1,3 +1,6 @@
+let playerScore = 0;
+let computerScore = 0;
+
 function playGame(playerInput) {
 	clearMessages();
 	function getMoveName(randomNumber) {
@@ -12,24 +15,31 @@ function playGame(playerInput) {
 	}
 	/*początek zmienianego kodu*/
 	function displayResult(argComputerMove, argPlayerMove) {
+		
 		printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove + '.');
 
 		if (argComputerMove == 'kamień' && argPlayerMove == 'papier') {
 			printMessage('Ty wygrywasz!');
+			playerScore++;
 		} else if (argComputerMove == 'kamień' && argPlayerMove == 'nożyce') {
 			printMessage('Wygrywa komputer!');
+			computerScore++;
 		} else if (argComputerMove == 'kamień' && argPlayerMove == 'kamień') {
 			printMessage('Remis!');
 		} else if (argComputerMove == 'papier' && argPlayerMove == 'kamień') {
 			printMessage('Wygrywa komputer!');
+			computerScore++;
 		} else if (argComputerMove == 'papier' && argPlayerMove == 'nożyce') {
 			printMessage('Ty wygrywasz!');
+			playerScore++;
 		} else if (argComputerMove == 'papier' && argPlayerMove == 'papier') {
 			printMessage('Remis!');
 		} else if (argComputerMove == 'nożyce' && argPlayerMove == 'kamień') {
 			printMessage('Ty wygrywasz!');
+			playerScore++;
 		} else if (argComputerMove == 'nożyce' && argPlayerMove == 'papier') {
 			printMessage('Wygrywa komputer!');
+			computerScore++;
 		} else if (argComputerMove == 'nożyce' && argPlayerMove == 'nożyce') {
 			printMessage('Remis!');
 		} else if (argComputerMove == 'papier' || argComputerMove == 'kamień' || argComputerMove == 'nożyce' && argPlayerMove == 'nieznany ruch') {
@@ -37,9 +47,10 @@ function playGame(playerInput) {
 		} return '';
 	}
 	/*koniec zmienianego kodu*/
-
+console.log(computerScore);
+console.log(playerScore);
 	let randomNumber = Math.floor(Math.random() * 3 + 1);
-
+	
 	console.log('Wylosowana liczba to: ' + randomNumber);
 
 	let argComputerMove = getMoveName(randomNumber);
@@ -96,6 +107,8 @@ function playGame(playerInput) {
 	}*/
 
 	displayResult(argComputerMove, argPlayerMove);
+	result = playerScore - computerScore;
+	printResult('Wynik: ' + result);
 }
 
 document.getElementById('play-rock').addEventListener('click', function () {
