@@ -105,10 +105,11 @@ console.log(playerScore);
 	} else if (computerMove == 'papier' || computerMove == 'kamień' || computerMove == 'nożyce' && playerMove == 'nieznany ruch') {
 		printMessage('Nie podałeś liczby 1,2 lub 3!');
 	}*/
-
+	
 	displayResult(argComputerMove, argPlayerMove);
-	result = playerScore - computerScore;
+	let result = playerScore - computerScore;
 	printResult('Wynik: ' + result);
+	console.log('Wynik rozgrywki: ' + result);
 }
 
 document.getElementById('play-rock').addEventListener('click', function () {
