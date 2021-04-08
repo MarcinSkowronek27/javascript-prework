@@ -5,7 +5,7 @@
 	function playGame(playerInput) {
 		const randomNumber = Math.floor(Math.random() * 3 + 1);
 		clearMessages();
-		function getMoveName(randomNumber) {
+		const getMoveName = function(randomNumber) {
 			if (randomNumber == 1) {
 				return 'kamień';
 			} else if (randomNumber == 2) {
