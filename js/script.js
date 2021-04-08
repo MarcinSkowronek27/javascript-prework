@@ -2,10 +2,10 @@
 	let playerScore = 0;
 	let computerScore = 0;
 
-	const playGame = function(playerInput) {
+	const playGame = function (playerInput) {
 		const randomNumber = Math.floor(Math.random() * 3 + 1);
 		clearMessages();
-		const getMoveName = function(randomNumber) {
+		const getMoveName = function (randomNumber) {
 			if (randomNumber == 1) {
 				return 'kamień';
 			} else if (randomNumber == 2) {
@@ -18,7 +18,7 @@
 		const argPlayerMove = getMoveName(playerInput);
 		const argComputerMove = getMoveName(randomNumber);
 
-		function displayResult(argComputerMove, argPlayerMove) {
+		const displayResult = function (argComputerMove, argPlayerMove) {
 
 			printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove + '.');
 
