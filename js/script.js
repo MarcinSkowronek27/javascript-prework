@@ -2,7 +2,7 @@
 	let playerScore = 0;
 	let computerScore = 0;
 
-	function playGame(playerInput) {
+	const playGame = function(playerInput) {
 		const randomNumber = Math.floor(Math.random() * 3 + 1);
 		clearMessages();
 		const getMoveName = function(randomNumber) {
