@@ -1,4 +1,4 @@
-let playerScore = 0;
+{let playerScore = 0;
 let computerScore = 0;
 
 function playGame(playerInput) {
@@ -122,3 +122,4 @@ document.getElementById('play-scissors').addEventListener('click', function () {
 	playGame(3);
 });
 /*dodać ostatni commit na gitHub*/
+}

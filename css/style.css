@@ -1,2 +1,20 @@
+body {
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+}
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
+button {
+  font-size: 22px;
+  font-style: italic;
+  width: auto;
+  height: 50px;
+  text-align: center;
+  justify-content: center;
+}
+
+#result {
+  font-size: 23px;
+  font-weight: 800;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLHVCQUF1QjtFQUN2QixrQkFBa0I7RUFDbEIsZUFBZTtBQ0NuQjs7QURDQTtFQUNJLGVBQWU7RUFDZixrQkFBa0I7RUFDbEIsV0FBVztFQUNYLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIsdUJBQXVCO0FDRTNCOztBREFBO0VBQ0ksZUFBZTtFQUNmLGdCQUFnQjtBQ0dwQiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
