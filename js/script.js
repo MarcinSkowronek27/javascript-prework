@@ -49,11 +49,10 @@ function playGame(playerInput) {
 	/*koniec zmienianego kodu*/
 console.log(computerScore);
 console.log(playerScore);
-	let randomNumber = Math.floor(Math.random() * 3 + 1);
-	
+	const randomNumber = Math.floor(Math.random() * 3 + 1);
 	console.log('Wylosowana liczba to: ' + randomNumber);
 
-	let argComputerMove = getMoveName(randomNumber);
+	const argComputerMove = getMoveName(randomNumber);
 
 	/*
 	if(randomNumber == 1){
@@ -70,7 +69,7 @@ console.log(playerScore);
 
 	console.log('Gracz wpisał: ' + playerInput);
 
-	let argPlayerMove = getMoveName(playerInput);
+	const argPlayerMove = getMoveName(playerInput);
 	/*
 	if (playerInput == '1') {
 		playerMove = 'kamień';
@@ -107,7 +106,7 @@ console.log(playerScore);
 	}*/
 	
 	displayResult(argComputerMove, argPlayerMove);
-	let result = playerScore - computerScore;
+	const result = playerScore - computerScore;
 	printResult('Wynik: ' + result);
 	console.log('Wynik rozgrywki: ' + result);
 }
