@@ -2,10 +2,10 @@
 	let playerScore = 0;
 	let computerScore = 0;
 
-	const playGame = function (playerInput) {
+	const playGame = function(playerInput) {
 		const randomNumber = Math.floor(Math.random() * 3 + 1);
 		clearMessages();
-		const getMoveName = function (randomNumber) {
+		const getMoveName = function(randomNumber) {
 			if (randomNumber == 1) {
 				return 'kamień';
 			} else if (randomNumber == 2) {
@@ -18,7 +18,7 @@
 		const argPlayerMove = getMoveName(playerInput);
 		const argComputerMove = getMoveName(randomNumber);
 
-		const displayResult = function (argComputerMove, argPlayerMove) {
+		const displayResult = function(argComputerMove, argPlayerMove) {
 
 			printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove + '.');
 
@@ -62,9 +62,10 @@
 		printMessage('Twój ruch to: ' + argPlayerMove);
 
 		displayResult(argComputerMove, argPlayerMove);
-		const result = playerScore - computerScore;
-		printResult('Wynik: ' + result);
-		console.log('Wynik rozgrywki: ' + result);
+		//const result = playerScore - computerScore;
+		//printResult('Wynik: ' + result);
+		printResult(playerScore + '-' + computerScore);
+		//console.log('Wynik rozgrywki: ' + result);
 	}
 
 	document.getElementById('play-rock').addEventListener('click', function () {
